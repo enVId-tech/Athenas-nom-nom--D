@@ -2,16 +2,16 @@ import React from 'react';
 import Navbar from '../assets/ts/navbar.tsx';
 import '../assets/scss/homepage.scss';
 
-const HomePage: React.FC = (): React.JSX.Element => {
+const ContactPage: React.FC = (): React.JSX.Element => {
     return (
-        <section id="home">
+        <section id="contact">
             <Navbar />
             <div>
-                <h1>Homepage</h1>
+                <h1>Contact</h1>
             </div>
             <p>nomnom content nyehehehe</p>
         </section>
     )
 }
 
-export default HomePage;
+export default ContactPage;
