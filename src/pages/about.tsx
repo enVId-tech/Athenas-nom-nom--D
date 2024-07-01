@@ -6,7 +6,7 @@ const AboutPage: React.FC = (): React.JSX.Element => {
     return (
         <section id="about">
             <Navbar />
-            <div>
+            <div id="abouttitle">
                 <h1>About Us</h1>
             </div>
             <p>nomnom content nyehehehe</p>

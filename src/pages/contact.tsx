@@ -6,7 +6,7 @@ const ContactPage: React.FC = (): React.JSX.Element => {
     return (
         <section id="contact">
             <Navbar />
-            <div>
+            <div id="contacttitle">
                 <h1>Contact</h1>
             </div>
             <p>nomnom content nyehehehe</p>

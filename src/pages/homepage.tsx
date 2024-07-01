@@ -6,10 +6,22 @@ const HomePage: React.FC = (): React.JSX.Element => {
     return (
         <section id="home">
             <Navbar />
-            <div>
+            <div id="hometitle">
                 <h1>Homepage</h1>
             </div>
-            <p>nomnom content nyehehehe</p>
+            <div id="homeabout">
+                <h2>About</h2>
+                <p>nomnom content nyehehehe</p>
+            </div>
+            <div id="homeinfo">
+                <h2>Info</h2>
+                <p>nomnom content nyehehehe</p>
+            </div>
+            <div id="homecontact">
+                <h2>Contact</h2>
+                <p>nomnom content nyehehehe</p>
+            </div>
+
         </section>
     )
 }
