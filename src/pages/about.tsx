@@ -9,7 +9,9 @@ const AboutPage: React.FC = (): React.JSX.Element => {
             <div id="abouttitle">
                 <h1>About Us</h1>
             </div>
-            <p>nomnom content nyehehehe</p>
+            <div id="aboutcontent">
+                <p>content lolol</p>
+            </div>
         </section>
     )
 }

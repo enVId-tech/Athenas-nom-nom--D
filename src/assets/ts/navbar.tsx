@@ -1,5 +1,6 @@
 import React from "react";
 import '../scss/navbar.scss';
+// @ts-expect-error Proper image
 import img from '../img/Logo.jpg';
 
 const Navbar: React.FC = (): React.JSX.Element => {
