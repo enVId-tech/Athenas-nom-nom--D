@@ -3,11 +3,13 @@ import Navbar from '../assets/ts/navbar.tsx';
 import '../assets/scss/homepage.scss';
 // @ts-expect-error Proper image
 import img from "../assets/img/Logo.jpg";
+import AnimationGlobal from '../assets/ts/animationGlobal.tsx';
 
 const HomePage: React.FC = (): React.JSX.Element => {
     return (
         <section id="home">
             <Navbar />
+            <AnimationGlobal />
             <div id="banner">
                 <p id="banner_title">Global Youth Scholars</p>
 
@@ -33,8 +35,8 @@ const HomePage: React.FC = (): React.JSX.Element => {
             </div>
 
             <div id="homecontact">
-                <h2>Contact</h2>
-                <p>nomnom content nyehehehe</p>
+                <p id="contact_title">Contact</p>
+                <p id="contact_content">nomnom content nyehehehe</p>
             </div>
         </section>
     )
