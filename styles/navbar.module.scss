@@ -1,0 +1,17 @@
+$navbarHeight: 4rem;
+
+.navbarMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: $navbarHeight;
+    height: $navbarHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
