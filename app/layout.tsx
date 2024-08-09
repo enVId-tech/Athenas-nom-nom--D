@@ -1,4 +1,5 @@
 import Navbar from "@/app/_components/navbar.tsx"
+import styles from '@/styles/layout.module.scss';
 
 export const metadata = {
   title: 'Next.js',
@@ -13,8 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <div className={styles.container}>
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   )

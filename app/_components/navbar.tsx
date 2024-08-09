@@ -20,7 +20,11 @@ export default async function Navbar(): Promise<React.JSX.Element> {
     }
 
     return (
-        <nav className={styles.navbarMain}>
+        <div className={styles.navbarMain}>
+            <div className={styles.navbarTitle}>
+                <img src="/logo.png" alt="logo" />
+                <h1>Next.js</h1>
+            </div>
             <ul>
                 <li>
                     <a href="/">Home</a>
@@ -32,6 +36,6 @@ export default async function Navbar(): Promise<React.JSX.Element> {
                     <a href="/contact">Contact</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     )
 }
