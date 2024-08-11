@@ -3,6 +3,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    color: white;
+    width: 100vw;
+
+    .homepageTitle {
+        font-size: 2.5vw;
+        margin-bottom: 1vh;
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(5vh);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
 }

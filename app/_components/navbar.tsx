@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/styles/navbar.module.scss";
+import GYS from "@/public/GYSLogo.png";
+import Link from "next/link";
 
 async function getFetchData(): Promise<any> {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -22,18 +24,24 @@ export default async function Navbar(): Promise<React.JSX.Element> {
     return (
         <div className={styles.navbarMain}>
             <div className={styles.navbarTitle}>
-                <img src="/logo.png" alt="logo" />
-                <h1>Next.js</h1>
+                <img src={GYS.src} alt="Global Youth Scholars" />
+                <h1>Global Youth Scholars</h1>
             </div>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <Link href="/services">Publications</Link>
+                </li>
+                <li>
+                    <Link href="/contact">Classes</Link>
+                </li>
+                <li>
+                    <Link href="/contact">Contact</Link>
                 </li>
             </ul>
         </div>
