@@ -35,10 +35,10 @@ export default async function Navbar(): Promise<React.JSX.Element> {
                     <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <Link href="/services">Publications</Link>
+                    <Link href="/publications">Publications</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Classes</Link>
+                    <Link href="/classes">Classes</Link>
                 </li>
                 <li>
                     <Link href="/contact">Contact</Link>

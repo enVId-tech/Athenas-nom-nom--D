@@ -10,7 +10,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
             </div>
 
             <div className={styles.homepageContent}>
-                <p>Welcome to the Global Youth Scholars program! This program is designed to help students learn about web development, programming, and other technical skills. Feel free to explore the website to learn more about the program and how you can get involved.</p>
+                <p>Welcome to the Global Youth Scholars program!</p>
             </div>
             <footer>
                 <p>Developed by Erick Tran (<a href="https://github.com/envid-tech" target='_blank' rel="noreferrer noopener">enVIdTech</a>) for the <Link href="/">Global Youth Scholars</Link> program.</p>
