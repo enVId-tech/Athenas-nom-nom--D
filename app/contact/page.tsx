@@ -5,7 +5,6 @@ export default async function ContactPage(): Promise<React.JSX.Element> {
 	return (
 		<section className={styles.contactMain}>
 			<h1>Contact</h1>
-			<p>Welcome to the Global Youth Scholars program!</p>
 		</section>
 	);
 }
