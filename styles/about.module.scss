@@ -1,0 +1,15 @@
+.aboutMain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #f5f5f5;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	h1 {
+		font-size: 3vw;
+		margin-bottom: 2vh;
+	}
+}
