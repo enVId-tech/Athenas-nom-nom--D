@@ -5,6 +5,38 @@
 	justify-content: center;
 	margin-top: 50px;
 	width: 100%;
+	background-color: rgb(235, 235, 235);
+
+	.publicationsSearchbar {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-top: 2vh;
+		background-color: white;
+
+		input {
+			width: 50%;
+			height: 5vh;
+			border: 1px solid black;
+			border-radius: 20px;
+			padding: 1vh;
+			font-size: 1.5vw;
+			margin-right: 2vw;
+		}
+
+		button {
+			width: 10%;
+			height: 5vh;
+			border: 1px solid black;
+			border-radius: 20px;
+			padding: 1vh;
+			font-size: 1.5vw;
+			background-color: black;
+			color: white;
+		}
+	}
 
 	.publicationsBody {
 		display: flex;

@@ -6,7 +6,14 @@ export default async function HomePage(): Promise<React.JSX.Element> {
     return (
         <section className={styles.homepageMain}>
             <div className={styles.homepageTitle}>
-                <h1>Global Youth Scholars</h1>
+                <div className={styles.title}>
+                    <div className={styles.titleContent}>
+                        <h4>Research Classes</h4>
+                        <h1>Starting August 14</h1>
+                        <p>Empowering the next generation of researchers</p>
+                        <button className={styles.registerButton}>Learn More</button>
+                    </div>
+                </div>
             </div>
 
             <div className={styles.homepageContent}>
