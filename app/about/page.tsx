@@ -12,6 +12,18 @@ export default function AboutPage(): React.JSX.Element {
 					<p>Our program offers students the opportunity to conduct research in various fields</p>
 				</div>
 			</div>
+			<div className={styles.whereWeWork}>
+				<h2>Location</h2>
+				<div className={styles.whereWeWorkMain}>
+					<div className={styles.whereWeWorkText}>
+						<p>Our program is based in</p>
+						<h1>California, USA</h1>
+						<p>However, we have students from all over the world</p>
+					</div>
+					<img alt="California" src="https://chimicles.com/wp-content/uploads/2016/05/California-state-large.png" />
+				</div>
+			</div>
+
 			<div className={styles.meetTheTeam}>
 				<h2>Meet the team</h2>
 				<div className={styles.teamMembers}>
