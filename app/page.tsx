@@ -17,24 +17,42 @@ export default async function HomePage(): Promise<React.JSX.Element> {
             </div>
 
             <div className={styles.homepageContent}>
+                <h2>Research Classes</h2>
                 <div className={styles.mainResearch}>
-                    <div className={styles.resource}>
-                        <img src="/research.jpg" alt="Research" width={300} height={200} />
-                        <h2>Research</h2>
-                        <p>Our students have the opportunity to conduct research in various fields, including computer science, biology, and more.</p>
+                    <div className={styles.researchContent}>
+                        <p>Our research classes are designed to help students develop their research skills and prepare them for a future in academia. We offer a variety of classes that cater to students of all ages and backgrounds.</p>
+                        <button className={styles.registerButton}>Learn More</button>
                     </div>
-                    <div className={styles.resource}>
-                        <img src="/publications.jpg" alt="Publications" width={300} height={200} />
-                        <h2>Publications</h2>
-                        <p>Our students have published their research in various journals and conferences.</p>
+                    <img src="/images/research.jpg" alt="Research" />
+                </div>
+
+                <div className={styles.homepageAbout}>
+                    <h2>About Us</h2>
+                    <div className={styles.aboutContent}>
+                        <img src="/images/about.jpg" alt="About Us" />
+                        <div className={styles.aboutText}>
+                            <p>Global Youth Scholars is an educational organization that aims to provide students with the resources and support they need to succeed in their academic pursuits. We offer a variety of programs and classes that cater to students of all ages and backgrounds.</p>
+                            <button className={styles.registerButton}>Learn More</button>
+                        </div>
                     </div>
-                    <div className={styles.resource}>
-                        <img src="/community.jpg" alt="Community" width={300} height={200} />
-                        <h2>Community</h2>
-                        <p>Our students have the opportunity to connect with other students and professionals in their field.</p>
+                </div>
+
+                <div className={styles.statstics}>
+                    <div className={styles.statistic}>
+                        <h2>100+</h2>
+                        <p>Students</p>
+                    </div>
+                    <div className={styles.statistic}>
+                        <h2>10+</h2>
+                        <p>Classes</p>
+                    </div>
+                    <div className={styles.statistic}>
+                        <h2>5+</h2>
+                        <p>Teachers</p>
                     </div>
                 </div>
             </div>
+
             <footer>
                 <p>Developed by Erick Tran (<a href="https://github.com/envid-tech" target='_blank' rel="noreferrer noopener">enVIdTech</a>) for the <Link href="/">Global Youth Scholars</Link> program.</p>
             </footer>

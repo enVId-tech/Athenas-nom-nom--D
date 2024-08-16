@@ -6,8 +6,8 @@
     width: 100%;
 
     .homepageTitle {
-        height: 80vh;
-        background-image: url("https://th.bing.com/th/id/OIP.vQ76xZLD9QUTegTddUfHvwHaHa?rs=1&pid=ImgDetMain");
+        height: 90vh;
+        background-image: url("../public/Background.jpeg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -18,13 +18,16 @@
 
         .title {
             background-color: white;
-            height: 60vh;
+            height: 65vh;
             width: 24vw;
-            margin-right: 35vw;
+            margin-right: 45vw;
+            margin-bottom: 7vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            z-index: 200;
 
             .titleContent {
                 display: flex;
@@ -53,7 +56,7 @@
                 }
 
                 button {
-                    background-color: rgba(58,115,192,255);
+                    background-color: rgba(58, 115, 192, 255);
                     color: white;
                     border: none;
                     border-radius: 5px;
@@ -64,7 +67,7 @@
                     transition: 0.3s;
 
                     &:hover {
-                        background-color: rgba(58,115,192,0.7);
+                        background-color: rgba(255, 255, 255, 0.7);
                     }
                 }
             }
@@ -75,43 +78,63 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2vh;
+        justify-content: flex-start;
+        text-align: center;
+        width: 80%;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        margin-top: -7.5vh;
+        z-index: 2000;
+        background-color: white;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+        h2 {
+            font-size: 2.5vw;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
 
         .mainResearch {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: space-around;
             width: 100%;
-            margin-top: 2vh;
+            height: min-height;
 
-            .resource {
-                width: 20vw;
-                height: 50vw;
-                margin: 0 2vw;
-                border: 1px solid black;
-                border-radius: 20px;
-                text-align: center;
-                padding: 2vh;
+            img {
+                width: 35vh;
+                height: 35vh;
+                background-color: black;
+            }
 
-                img {
-                    width: 20vw;
-                    height: 20vw;
-                    border-radius: 50%;
-                    margin-bottom: 2vh;
-                    background-color: black;
-                }
-
-                h2 {
-                    font-size: 3vw;
-                    margin-bottom: 1vh;
-                }
+            .researchContent {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                width: 50%;
 
                 p {
-                    font-size: 1.25vw;
+                    font-size: 1.75vw;
                     margin-top: 2vh;
+                }
+
+                button {
+                    background-color: rgba(58, 115, 192, 255);
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 1vh 2vw;
+                    font-size: 1.5vw;
+                    margin-top: 2vh;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    width: 15vw;
+                    height: 7vh;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.7);
+                    }
                 }
             }
         }
@@ -122,10 +145,11 @@
             opacity: 0;
             transform: translateY(5vh);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
     }
 }
