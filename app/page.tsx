@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/styles/homepage.module.scss';
 import Link from 'next/link';
+import GYS from '@/public/GYSLogo.png';
 
 export default async function HomePage(): Promise<React.JSX.Element> {
     return (
@@ -23,13 +24,13 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                         <p>Our research classes are designed to help students develop their research skills and prepare them for a future in academia. We offer a variety of classes that cater to students of all ages and backgrounds.</p>
                         <button className={styles.registerButton}>Learn More</button>
                     </div>
-                    <img src="/images/research.jpg" alt="Research" />
+                    <img src={GYS.src} alt="Research" />
                 </div>
 
                 <div className={styles.homepageAbout}>
                     <h2>About Us</h2>
                     <div className={styles.aboutContent}>
-                        <img src="/images/about.jpg" alt="About Us" />
+                        <img src={GYS.src} alt="About Us" />
                         <div className={styles.aboutText}>
                             <p>Global Youth Scholars is an educational organization that aims to provide students with the resources and support they need to succeed in their academic pursuits. We offer a variety of programs and classes that cater to students of all ages and backgrounds.</p>
                             <button className={styles.registerButton}>Learn More</button>
@@ -37,7 +38,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                     </div>
                 </div>
 
-                <div className={styles.statstics}>
+                <div className={styles.statistics}>
                     <div className={styles.statistic}>
                         <h2>100+</h2>
                         <p>Students</p>
