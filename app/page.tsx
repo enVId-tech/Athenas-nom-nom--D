@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '@/styles/homepage.module.scss';
 import Link from 'next/link';
 import GYS from '@/public/GYSLogo.png';
+import Footer from './_components/footer';
 
 export default async function HomePage(): Promise<React.JSX.Element> {
     return (
@@ -12,7 +13,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                         <h4>Research Classes</h4>
                         <h1>Starting August 14</h1>
                         <p>Empowering the next generation of researchers</p>
-                        <button className={styles.registerButton}>Learn More</button>
+                        <a className={styles.registerButton} href="/register">Register</a>
                     </div>
                 </div>
             </div>
@@ -54,9 +55,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                 </div>
             </div>
 
-            <footer>
-                <p>Developed by Erick Tran (<a href="https://github.com/envid-tech" target='_blank' rel="noreferrer noopener">enVIdTech</a>) for the <Link href="/">Global Youth Scholars</Link> program.</p>
-            </footer>
+            <Footer />
         </section>
     )
 }

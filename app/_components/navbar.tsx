@@ -41,7 +41,7 @@ export default async function Navbar(): Promise<React.JSX.Element> {
                     <Link href="/classes">Classes</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/register">Register</Link>
                 </li>
             </ul>
         </div>
