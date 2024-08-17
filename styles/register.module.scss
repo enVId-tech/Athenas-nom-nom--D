@@ -6,41 +6,46 @@
 	align-items: center;
 
 	.registerTitle {
-        height: 90vh;
-        background-image: url("../public/Background.jpeg");
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+		height: 90vh;
+		background-image: url("../public/Background.jpeg");
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		z-index: 10;
-    }
+	}
 
 	.registerBody {
 		display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: center;
-        width: 80%;
-        padding-right: 3vw;
-        padding-left: 3vw;
-        z-index: 2000;
-        background-color: white;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: center;
+		width: 80%;
+		padding-right: 3vw;
+		padding-left: 3vw;
+		z-index: 2000;
+		background-color: white;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		min-height: 70vh;
 		animation: animationScrollUp 1s ease-in-out forwards;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
+
+		.registerHeader {
+			font-size: 4vw;
+		}
 	}
 
 	@keyframes animationScrollUp {
 		0% {
 			transform: translateY(0vh);
 		}
+
 		100% {
 			transform: translateY(-20vh);
 		}

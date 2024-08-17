@@ -10,7 +10,11 @@ export default async function RegisterPage(): Promise<React.JSX.Element> {
 			</div>
 
 			<div className={styles.registerBody}>
+				<h1 className={styles.registerHeader}>Register for classes</h1>
+
+				<div className={styles.registerForm}>
 				
+				</div>
 			</div>
 
 			<Socials />
