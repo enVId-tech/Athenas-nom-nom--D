@@ -136,7 +136,7 @@
                     transition: 0.3s;
                     width: 15vw;
                     height: 7vh;
-                    border: 3px solid rgb(0, 0, 0);
+                    border: 1px solid rgba(58, 115, 192, 255);
                     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
                     &:hover {
@@ -200,13 +200,12 @@
                     transition: 0.3s;
                     width: 15vw;
                     height: 7vh;
-                    border: 3px solid rgb(0, 0, 0);
+                    border: 1px solid rgba(58, 115, 192, 255);
                     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
                     &:hover {
-                        background-color: rgba(255, 255, 255, 0.7);
+                        background-color: rgb(255, 255, 255);
                         color: rgba(58, 115, 192, 255);
-                        border: 3px solid rgb(0, 0, 0);
                     }
                 }
             }
@@ -279,7 +278,7 @@
                 button {
                     background-color: rgba(58, 115, 192, 255);
                     color: white;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 1vh 2vw;
                     font-size: 1.5vw;
                     margin-top: 2vh;
@@ -287,13 +286,12 @@
                     transition: 0.3s;
                     width: 15vw;
                     height: 7vh;
-                    border: 3px solid rgb(0, 0, 0);
+                    border: 1px solid rgba(58, 115, 192, 255);
                     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 
                     &:hover {
-                        background-color: rgba(255, 255, 255, 0.7);
+                        background-color: rgb(255, 255, 255);
                         color: rgba(58, 115, 192, 255);
-                        border: 3px solid rgb(0, 0, 0);
                     }
                 }
             }
