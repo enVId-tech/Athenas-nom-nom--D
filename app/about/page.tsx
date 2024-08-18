@@ -6,10 +6,8 @@ export default function AboutPage(): React.JSX.Element {
 		<section className={styles.aboutMain}>
 			<h1>About our organisation</h1>
 			<div className={styles.aboutTitle}>
-
 				<div className={styles.aboutContent}>
-					<p>Welcome to the Global Youth Scholars program!</p>
-					<p>Our program offers students the opportunity to conduct research in various fields</p>
+					<p>Created in 2024, our program is designed to help students do research in a variety of fields, including science, technology, engineering, and mathematics (STEM).</p>
 				</div>
 			</div>
 			<div className={styles.whereWeWork}>

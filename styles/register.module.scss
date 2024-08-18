@@ -5,6 +5,10 @@
 	flex-direction: column;
 	align-items: center;
 
+	a {
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	}
+
 	.registerTitle {
 		height: 90vh;
 		background-image: url("../public/Background.jpeg");
@@ -47,11 +51,12 @@
 			justify-content: space-around;
 			width: 100%;
 
-			.redirect {
+			.volunteerSign {
 				border-right: 0 !important;
 			}
 
-			.signUp, .redirect {
+			.signUp,
+			.volunteerSign {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -60,21 +65,24 @@
 				padding: 2vh;
 				border-right: 1px solid black;
 
-				.signUpHeader, .redirectHeader {
+				.signUpHeader,
+				.volunteerSignHeader {
 					font-size: 2.5vw;
 					margin: 0;
 					padding: 0;
 					margin-bottom: 2vh;
 				}
 
-				.signUpText, .redirectText {
+				.signUpText,
+				.volunteerSignText {
 					font-size: 1.5vw;
 					margin: 0;
 					padding: 0;
 					margin-bottom: 2vh;
 				}
 
-				.signUpButton, .redirectButton {
+				.signUpButton,
+				.volunteerSignButton {
 					font-size: 1.5vw;
 					padding: 1vh;
 					border-radius: 10px;
@@ -97,6 +105,50 @@
 			}
 		}
 
+		.redirect {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 2vh;
+
+			.redirectHeader {
+				font-size: 2.5vw;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 2vh;
+			}
+
+			.redirectText {
+				font-size: 1.5vw;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 2vh;
+			}
+
+			.redirectButton {
+				font-size: 1.5vw;
+				padding: 1vh;
+				border-radius: 10px;
+				background-color: #f0f0f0;
+				border: 2px solid black;
+				cursor: pointer;
+				transition: all 0.2s ease-in-out;
+				text-decoration: none;
+				color: black;
+				margin: 0;
+				margin-top: 2vh;
+				margin-bottom: 6vh;
+
+				&:hover {
+					background-color: #e0e0e0;
+					font-size: 2vw;
+					margin-bottom: 4.5vh;
+				}
+			}
+		}
+
 		.moreInfo {
 			font-size: 1.5vw;
 			margin: 0;
@@ -109,7 +161,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			
+
 			h1 {
 				font-size: 2.5vw;
 				margin: 0;
@@ -156,7 +208,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			
+
 			h1 {
 				font-size: 2.5vw;
 				margin: 0;

@@ -18,11 +18,18 @@ export default async function RegisterPage(): Promise<React.JSX.Element> {
 						<p className={styles.signUpText}>Want to sign up for classes? Fill out the form below to get started.</p>
 						<a className={styles.signUpButton} href="/register">Sign Up</a>
 					</div>
-					<div className={styles.redirect}>
-						<h1 className={styles.redirectHeader}>Already registered?</h1>
-						<p className={styles.redirectText}>Check out some of the research and publications of our students.</p>
-						<a className={styles.redirectButton} href="/publications">View Research</a>
+
+					<div className={styles.volunteerSign}>
+						<h1 className={styles.volunteerSignHeader}>Volunteer</h1>
+						<p className={styles.volunteerSignText}>Our organization relies on volunteers to teach our classes. If you are interested, fill out the form below to get started.</p>
+						<a className={styles.volunteerSignButton} href="/register">Volunteer</a>
 					</div>
+				</div>
+
+				<div className={styles.redirect}>
+					<h1 className={styles.redirectHeader}>Already registered?</h1>
+					<p className={styles.redirectText}>Check out some of the research and publications of our students.</p>
+					<a className={styles.redirectButton} href="/publications">View Research</a>
 				</div>
 
 				<div className={styles.moreInfo}>
