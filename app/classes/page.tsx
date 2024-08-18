@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/classes.module.scss";
+import Footer from "../_components/footer";
 
 export default async function ClassesPage(): Promise<React.JSX.Element> {
 	return (
@@ -38,6 +39,8 @@ export default async function ClassesPage(): Promise<React.JSX.Element> {
 					<p className={styles.wantToRegisterText}>Interested in our program or our classes? Click on the register button to go to register for classes.</p>
 					<a className={styles.registerButton} href="/register">Register</a>
 				</div>
+
+				<Footer />
 			</div>
 		</section>
 	);

@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	position: relative;
 
 	.classesTitle {
 		height: 90vh;
@@ -17,6 +18,8 @@
 		width: 100%;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		z-index: 10;
+		margin: 0;
+		padding: 0;
 	}
 
 	.classesBody {
@@ -26,12 +29,15 @@
 		justify-content: flex-start;
 		text-align: center;
 		width: 80%;
+		margin: 0;
+		padding: 0;
 		padding-right: 3vw;
 		padding-left: 3vw;
 		z-index: 2000;
 		background-color: white;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		min-height: 70vh;
+		position: absolute;
 		animation: animationScrollUp 1s ease-in-out forwards;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
@@ -135,12 +141,11 @@
 	}
 
 	@keyframes animationScrollUp {
-		0% {
-			transform: translateY(0vh);
+		from {
+			top: 100vh;
 		}
-
-		100% {
-			transform: translateY(-20vh);
+		to {
+			top: 67.5vh;
 		}
 	}
 }

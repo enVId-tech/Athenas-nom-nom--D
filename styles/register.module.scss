@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 
 	a {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
@@ -36,6 +37,7 @@
 		background-color: white;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 		min-height: 70vh;
+		position: absolute;
 		animation: animationScrollUp 1s ease-in-out forwards;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
@@ -201,8 +203,6 @@
 		.contact {
 			font-size: 1.5vw;
 			margin: 0;
-			margin-bottom: 5vh;
-			margin-top: 10vh;
 			padding: 3vw;
 			width: 90%;
 			display: flex;
@@ -247,12 +247,11 @@
 	}
 
 	@keyframes animationScrollUp {
-		0% {
-			transform: translateY(0vh);
+		from {
+			top: 100vh;
 		}
-
-		100% {
-			transform: translateY(-20vh);
+		to {
+			top: 67.5vh;
 		}
 	}
 }

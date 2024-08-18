@@ -43,10 +43,10 @@ export default async function RegisterPage(): Promise<React.JSX.Element> {
 					<p className={styles.contactText}>Have any questions or concerns? Feel free to contact us at the email below.</p>
 					<a className={styles.contactButton} href="mailto:" target="_blank">Contact Us</a>
 				</div>
-			</div>
 
-			<Socials />
-			<Footer />
+				<Socials />
+				<Footer />
+			</div>
 		</section>
 	);
 }
