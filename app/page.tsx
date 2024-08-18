@@ -53,6 +53,17 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                         <p>Teachers</p>
                     </div>
                 </div>
+
+                <div className={styles.homepageContact}>
+                    <h2>Contact Us</h2>
+                    <div className={styles.contactContent}>
+                        <div className={styles.contactText}>
+                            <p>Have a question or need more information? Contact us today!</p>
+                            <button className={styles.registerButton}>Contact Us</button>
+                        </div>
+                        <img src={GYS.src} alt="Contact Us" />
+                    </div>
+                </div>
             </div>
 
             <Footer />
