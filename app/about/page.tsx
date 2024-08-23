@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/about.module.scss";
 import Footer from "../_components/footer";
+import { board } from "@/templates/board";
 
 export default function AboutPage(): React.JSX.Element {
 	return (
@@ -27,30 +28,16 @@ export default function AboutPage(): React.JSX.Element {
 				<div className={styles.meetTheTeam}>
 					<h2>Meet the team</h2>
 					<div className={styles.teamMembers}>
-						<div className={styles.teamMember}>
-							<img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Team member" width={100} height={100} />
-							<h3>John Doe</h3>
-							<p>Director</p>
-							<h2>Ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.</h2>
-						</div>
-						<div className={styles.teamMember}>
-							<img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Team member" width={100} height={100} />
-							<h3>Jane Doe</h3>
-							<p>Researcher</p>
-							<h2>Ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.</h2>
-						</div>
-						<div className={styles.teamMember}>
-							<img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Team member" width={100} height={100} />
-							<h3>John Doe</h3>
-							<p>Director</p>
-							<h2>Ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.</h2>
-						</div>
-						<div className={styles.teamMember}>
-							<img src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" alt="Team member" width={100} height={100} />
-							<h3>Jane Doe</h3>
-							<p>Researcher</p>
-							<h2>Ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc.</h2>
-						</div>
+						{
+							Object.entries(board).map(([name, member]) => (
+								<div className={styles.teamMember} key={name}>
+									<img src={member.image} alt="Team member" width={100} height={100} />
+									<h3>{name}</h3>
+									<p>{member.position}</p>
+									<h2>{member.bio}</h2>
+								</div>
+							))
+						}
 					</div>
 				</div>
 			</div>

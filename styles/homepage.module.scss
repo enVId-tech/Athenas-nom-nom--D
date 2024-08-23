@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: url("https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/c7/8e/31/c78e318a-2ab1-daf1-a159-022a2bc7fedd/5054960058286_cover.jpg/1200x1200bf-60.jpg");
 
     .homepageTitle {
         height: 90vh;
@@ -16,7 +15,8 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        box-shadow: 50px 50px 50px 100px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        z-index: 100;
 
         .title {
             background-color: white;
