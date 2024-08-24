@@ -85,24 +85,27 @@
 
 				.signUpButton,
 				.volunteerSignButton {
-					font-size: 1.5vw;
-					padding: 1vh;
-					border-radius: 10px;
-					background-color: #f0f0f0;
-					border: 2px solid black;
-					cursor: pointer;
-					transition: all 0.2s ease-in-out;
+                    background-color: rgba(58, 115, 192, 255);
+                    color: white;
+                    border-radius: 5px;
+                    padding: 1vh 2vw;
+                    font-size: 1.5vw;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    width: 15vw;
+                    height: 7vh;
+                    border: 1px solid rgba(58, 115, 192, 255);
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					text-decoration: none;
-					color: black;
-					margin: 0;
-					margin-top: 2vh;
-					margin-bottom: 6vh;
+					font-size: 2.5vw;
 
-					&:hover {
-						background-color: #e0e0e0;
-						font-size: 2vw;
-						margin-bottom: 4.5vh;
-					}
+                    &:hover {
+                        background-color: rgb(255, 255, 255);
+                        color: rgba(58, 115, 192, 255);
+                    }
 				}
 			}
 		}
@@ -130,23 +133,26 @@
 			}
 
 			.redirectButton {
+				background-color: rgba(58, 115, 192, 255);
+				color: white;
+				border-radius: 5px;
+				padding: 1vh 2vw;
 				font-size: 1.5vw;
-				padding: 1vh;
-				border-radius: 10px;
-				background-color: #f0f0f0;
-				border: 2px solid black;
 				cursor: pointer;
-				transition: all 0.2s ease-in-out;
+				transition: 0.3s;
+				width: 15vw;
+				height: 7vh;
+				border: 1px solid rgba(58, 115, 192, 255);
+				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				text-decoration: none;
-				color: black;
-				margin: 0;
-				margin-top: 2vh;
-				margin-bottom: 6vh;
+				font-size: 2vw;
 
 				&:hover {
-					background-color: #e0e0e0;
-					font-size: 2vw;
-					margin-bottom: 4.5vh;
+					background-color: rgb(255, 255, 255);
+					color: rgba(58, 115, 192, 255);
 				}
 			}
 		}
@@ -179,23 +185,26 @@
 			}
 
 			a {
+				background-color: rgba(58, 115, 192, 255);
+				color: white;
+				border-radius: 5px;
+				padding: 1vh 2vw;
 				font-size: 1.5vw;
-				padding: 1vh;
-				border-radius: 10px;
-				background-color: #f0f0f0;
-				border: 2px solid black;
 				cursor: pointer;
-				transition: all 0.2s ease-in-out;
+				transition: 0.3s;
+				width: 13vw;
+				height: 6.066vh;
+				border: 1px solid rgba(58, 115, 192, 255);
+				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				text-decoration: none;
-				color: black;
-				margin: 0;
-				margin-top: 2vh;
-				margin-bottom: 6vh;
+				font-size: 2vw;
 
 				&:hover {
-					background-color: #e0e0e0;
-					font-size: 2vw;
-					margin-bottom: 4.5vh;
+					background-color: rgb(255, 255, 255);
+					color: rgba(58, 115, 192, 255);
 				}
 			}
 		}
@@ -224,23 +233,26 @@
 			}
 
 			a {
+				background-color: rgba(58, 115, 192, 255);
+				color: white;
+				border-radius: 5px;
+				padding: 1vh 2vw;
 				font-size: 1.5vw;
-				padding: 1vh;
-				border-radius: 10px;
-				background-color: #f0f0f0;
-				border: 2px solid black;
 				cursor: pointer;
-				transition: all 0.2s ease-in-out;
+				transition: 0.3s;
+				width: 15vw;
+				height: 7vh;
+				border: 1px solid rgba(58, 115, 192, 255);
+				box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				text-decoration: none;
-				color: black;
-				margin: 0;
-				margin-top: 2vh;
-				margin-bottom: 6vh;
+				font-size: 2.5vw;
 
 				&:hover {
-					background-color: #e0e0e0;
-					font-size: 2vw;
-					margin-bottom: 4.5vh;
+					background-color: rgb(255, 255, 255);
+					color: rgba(58, 115, 192, 255);
 				}
 			}
 		}
@@ -252,6 +264,108 @@
 		}
 		to {
 			top: 67.5vh;
+		}
+	}
+}
+
+@media (max-width: 719px) {
+	.registerMain {
+		.registerTitle {
+			height: 45vh;
+		}
+
+		.registerBody {
+			.registerHeader {
+				font-size: 8vw;
+			}
+
+			.registerForm {
+				.signUp,
+				.volunteerSign {
+					width: 80%;
+					padding: 2vh;
+					border-right: 0;
+				}
+
+				.signUpHeader,
+				.volunteerSignHeader {
+					font-size: 5vw;
+					margin-bottom: 4vh;
+				}
+
+				.signUpText,
+				.volunteerSignText {
+					font-size: 3vw;
+					margin-bottom: 4vh;
+				}
+
+				.signUpButton,
+				.volunteerSignButton {
+					font-size: 3vw;
+					width: 30vw;
+					height: 10vh;
+				}
+			}
+
+			.redirect {
+				.redirectHeader {
+					font-size: 5vw;
+					margin-bottom: 4vh;
+				}
+
+				.redirectText {
+					font-size: 3vw;
+					margin-bottom: 4vh;
+				}
+
+				.redirectButton {
+					font-size: 3vw;
+					width: 30vw;
+					height: 10vh;
+				}
+			}
+
+			.moreInfo {
+				font-size: 3vw;
+				margin-bottom: 10vh;
+
+				h1 {
+					font-size: 5vw;
+					margin-bottom: 4vh;
+				}
+
+				p {
+					font-size: 3vw;
+					margin-bottom: 4vh;
+				}
+
+				a {
+					font-size: 4vw;
+					width: 25vw;
+					height: 10vh;
+				}
+			}
+
+			.contact {
+				font-size: 3vw;
+				margin-bottom: 10vh;
+
+				h1 {
+					font-size: 5vw;
+					margin-bottom: 4vh;
+				}
+
+				p {
+					font-size: 3vw;
+					margin-bottom: 4vh;
+				}
+
+				a {
+					font-size: 4vw;
+					width: 30vw;
+					height: 10vh;
+				}
+			}
 		}
 	}
 }

@@ -7,10 +7,10 @@ export default function AboutPage(): React.JSX.Element {
 	return (
 		<section className={styles.aboutMain}>
 			<div className={styles.aboutSubMain}>
-				<h1>About our organisation</h1>
+				<h1 className={styles.title}>About our organisation</h1>
 				<div className={styles.aboutTitle}>
 					<div className={styles.aboutContent}>
-						<p>Created in 2024, our program is designed to help students do research in a variety of fields, including science, technology, engineering, and mathematics (STEM).</p>
+						<p>At Global Youth Scholars, we strive to support aspiring young researchers by providing opportunities to learn from experienced volunteer research teachers and work with other students to publish research papers.</p>
 					</div>
 				</div>
 				<div className={styles.whereWeWork}>

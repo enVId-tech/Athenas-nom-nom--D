@@ -1,24 +1,15 @@
+"use client";
+
 import React from "react";
 import styles from "@/styles/navbar.module.scss";
 import GYS from "@/public/GYSLogo.png";
-import Link from "next/link";
+import Hamburger from "@/public/Hamburger.jpeg";
 
-async function getFetchData(): Promise<any> {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const data = await res.json();
+export default function Navbar(): React.JSX.Element {
+    const [open, setOpen] = React.useState(false);
 
-    if (!data) {
-        return null;
-    }
-
-    return data;
-}
-
-export default async function Navbar(): Promise<React.JSX.Element> {
-    const data = await getFetchData();
-
-    if (!data) {
-        return <div>Loading...</div>;
+    const toggleMenu = (): void => {
+        setOpen(!open);
     }
 
     return (
@@ -27,23 +18,32 @@ export default async function Navbar(): Promise<React.JSX.Element> {
                 <img src={GYS.src} alt="Global Youth Scholars" />
                 <h1>Global Youth Scholars</h1>
             </div>
-            <ul>
+            {/* <ul>
                 <li>
-                    <Link href="/">Home</Link>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <Link href="/about">About</Link>
+                    <a href="/about">About</a>
                 </li>
                 <li>
-                    <Link href="/publications">Publications</Link>
+                    <a href="/publications">Publications</a>
                 </li>
                 <li>
-                    <Link href="/classes">Classes</Link>
+                    <a href="/classes">Classes</a>
                 </li>
                 <li>
-                    <Link href="/register">Register</Link>
+                    <a href="/register">Register</a>
                 </li>
-            </ul>
+            </ul> */}
+            <img src={Hamburger.src} alt="Hamburger" onClick={() => toggleMenu} />
+            
+            <div className={open ? styles.menuOpen : styles.menuClosed}>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/publications">Publications</a>
+                <a href="/classes">Classes</a>
+                <a href="/register">Register</a>
+            </div>
         </div>
     )
 }

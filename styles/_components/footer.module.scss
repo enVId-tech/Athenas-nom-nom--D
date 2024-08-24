@@ -12,6 +12,14 @@
 	}
 }
 
+@media (max-width: 719px) {
+	.footerMain {
+		padding: 10px;
+		width: 90%;
+		border-radius: 15px;
+	}
+}
+
 // .footerVisible {
 // 	animation: animationScrollUp 1s ease-in-out forwards;
 // }

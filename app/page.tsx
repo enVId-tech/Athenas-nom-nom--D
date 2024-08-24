@@ -34,7 +34,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                         <img src={GYS.src} alt="About Us" />
                         <div className={styles.aboutText}>
                             <p>Global Youth Scholars is an educational organization that aims to provide students with the resources and support they need to succeed in their academic pursuits. We offer a variety of programs and classes that cater to students of all ages and backgrounds.</p>
-                            <button className={styles.registerButton}>Learn More</button>
+                            <a className={styles.registerButton} href='/about'>Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ export default async function HomePage(): Promise<React.JSX.Element> {
                     <div className={styles.contactContent}>
                         <div className={styles.contactText}>
                             <p>Have a question or need more information? Contact us today!</p>
-                            <button className={styles.registerButton}>Contact Us</button>
+                            <a className={styles.registerButton} href="/register">Contact Us</a>
                         </div>
                         <img src={GYS.src} alt="Contact Us" />
                     </div>

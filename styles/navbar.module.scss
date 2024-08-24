@@ -48,3 +48,16 @@
         }
     }
 }
+
+@media (max-width: 719px) {
+    .navbarMain {
+        height: 10vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    
+        img {
+            width: 8vw;
+            height: 8vw;
+        }
+    }
+}

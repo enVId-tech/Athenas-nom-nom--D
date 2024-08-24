@@ -149,3 +149,64 @@
 		}
 	}
 }
+
+@media (max-width: 719px) {
+	.classesMain {
+		.classesTitle {
+			height: 45vh;
+		}
+
+		.classesBody {
+			.classesHeader {
+				font-size: 8vw;
+			}
+
+			.classesContent {
+				.class {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+
+					img {
+						width: 50vw;
+						height: auto;
+					}
+
+					.classContent {
+						width: 80%;
+						text-align: center;
+
+						h2 {
+							font-size: 5vw;
+						}
+
+						p {
+							font-size: 3vw;
+						}
+
+						a {
+							font-size: 3vw;
+							padding: 2vh 4vw;
+						}
+					}
+				}
+			}
+
+			.register {
+				.wantToRegister {
+					font-size: 8vw;
+				}
+
+				.wantToRegisterText {
+					font-size: 4vw;
+				}
+
+				.registerButton {
+					font-size: 5vw;
+					padding: 2vh 4vw;
+					width: 40vw;
+				}
+			}
+		}
+	}
+}
